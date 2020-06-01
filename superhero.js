@@ -1,32 +1,15 @@
-// (function () {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// })();
-
+//run this only when the page is loaded
 window.onload=function(){
 
+   //  console.log('loaded')
 
-
-
-
-    console.log('loaded')
-
+   //fetch reequest based on the id 
     async function showAllDetails(){
+       //Getting the parameters passed therought the URL
          var params =  window.location.href.split('?')[1];
          var id=params.split('=')[1];
-        console.log(id);
+      //   console.log(id);
         
         var url = `https://superheroapi.com/api/${accessToken}/${id}`;
         console.log(url);
@@ -42,6 +25,7 @@ window.onload=function(){
        
      }
     
+     //Creating different HTML section for different Category
      function appendDetails(superherodetails,appearance,bio,connections,powerstats,work){
         var imgDiv  = document.createElement('div');
         var appdiv  = document.createElement('div');
@@ -67,6 +51,8 @@ window.onload=function(){
         top.appendChild(condiv);
         top.appendChild(powdiv);
      }
+
+     //Showing the Image of superhero
      function renderImage(div,superherodetails){
         var image = superherodetails[0].image.url;
         var name = superherodetails[0].name;
@@ -76,6 +62,8 @@ window.onload=function(){
 
         return div;
      }
+
+     //this will render each section to the DOM
      function renderEachPart(div,superherodetails,section){
         var keys =Object.keys(section);
         var values = Object.values(section);
@@ -89,6 +77,7 @@ window.onload=function(){
         return div;
 
      }
+     //Get JSON Object of different category
     function extractDetails(superherodetails){
         var  details = superherodetails[0];
          var appearance = details.appearance;
