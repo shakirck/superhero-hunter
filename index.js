@@ -82,7 +82,7 @@ function showItems(name, gender, url, id) {
     li.innerHTML = `
                     <div class="card">
                     <div class="top">
-                       <a href='/viewsuperhero.html?id=${id}' data-id = ${id}> <img  class = "superhero" src="${url}" id = "${id}" width = 200px alt="image"></a>
+                       <a href='./viewsuperhero.html?id=${id}' data-id = ${id}> <img  class = "superhero" src="${url}" id = "${id}" width = 200px alt="image"></a>
                     </div>
                     <div class="down">
                         <p>${name}</p>
