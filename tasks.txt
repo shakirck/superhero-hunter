@@ -1,0 +1,17 @@
+-Fetch the superheroes id and names
+-search for specific super hero 
+    -auto suggestion based on typing
+-show basic details of super hero
+    -add to favorites
+-show all details of super hero based on  a new page
+
+
+-createa  my favorites page
+ - store in local storage
+ -remove from favorites
+
+
+
+
+
+

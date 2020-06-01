@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+#top{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.image{
+    width: 30%;
+    height: 30%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#top > div:nth-child(2n){
+    display: flex;
+    background-color: rgb(195, 197, 199);
+    width: 100%;
+    justify-content: center;
+}
+#top > div:nth-child(2n+1){
+    display: flex;
+    background-color: rgb(163, 188, 212);
+    width: 100%;
+    justify-content: center;
+}
+p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    word-spacing: 5px;
+    text-transform: capitalize;
+    line-height: 35px;
+    
+}
